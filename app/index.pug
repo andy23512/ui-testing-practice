@@ -4,8 +4,26 @@ html
     meta(charset='utf-8')
     title webpack_pack
   body
-    #hello
-      i.comment.icon
-      span hello world
+    .ui.segment
+      form.ui.form(data-test='contact-form')
+        .field
+          label Name
+          input(name='name' type='text')
+        .field
+          label E-mail
+          input(name='email' type='email')
+        .field
+          label Tel
+          input(name='tel' type='tel')
+        .field
+          label Message
+          textarea(name='message')
+        .field
+          .ui.checkbox
+            input.hidden(type='checkbox')
+            label I agree to the Terms and Conditions
+        button.ui.button(type='submit') Submit
+    .ui.modal
+      .header Successfully submited!
 
 //- vi:et:nowrap:sw=2:ts=2

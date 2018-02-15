@@ -9,6 +9,9 @@ require './index.pug'
 
 # our js code
 $ document .ready ->
-  console.log 'It works'
+  $ \.ui.checkbox .checkbox!
+  $ \form .on \submit ->
+    it.prevent-default!
+    $ \.modal .modal! .modal \show
 
 # vi:et:nowrap:sw=2:ts=2
