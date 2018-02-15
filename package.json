@@ -3,7 +3,8 @@
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack-dev-server",
-    "start": "gulp server"
+    "start": "gulp server",
+    "test": "jest"
   },
   "dependencies": {
     "babel-core": "^6.22.1",
@@ -28,5 +29,12 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.16.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.2.2",
+    "babel-preset-env": "^1.6.1",
+    "faker": "^4.1.0",
+    "jest": "^22.3.0",
+    "puppeteer": "^1.0.0"
   }
 }
